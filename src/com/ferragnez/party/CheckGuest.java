@@ -42,13 +42,13 @@ public class CheckGuest {
         int index = 0;
 
         while (index < invitati.length) {
-            if (formattedGuestName.equalsIgnoreCase(invitati[index].toLowerCase().replaceAll("\\s", ""))) {
+            if (formattedGuestName.equalsIgnoreCase(invitati[index].replaceAll("\\s", ""))) {
                 System.out.println("Accesso consentito, Nome " + guestName + " presente in lista");
                 isInvited = true;
                 break;
-            } else {
-                index++;
             }
+
+            index++;
 
         }
 
